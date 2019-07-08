@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BookStore>
+<Book>
+<BookId>1</BookId>
+<BookName>A</BookName>
+<Author>ABC</Author>
+<Price>200</Price>
+</Book>
+<Book>
+<BookId>2</BookId>
+<BookName>P</BookName>
+<Author>PQR</Author>
+<Price>453</Price>
+</Book>
+<Book>
+<BookId>3</BookId>
+<BookName>X</BookName>
+<Author>XYZ</Author>
+<Price>123</Price>
+</Book>
+</BookStore>
