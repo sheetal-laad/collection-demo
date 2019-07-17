@@ -1,24 +1,39 @@
+package com.ssi.DemoHib;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
+@Entity
+public class Employee {
+	@Id
+	private int eid;
+	private String ename;
+	private String gender;
+	private Float salary;
+	public int getEid() {
+		return eid;
+	}
+	public void setEid(int eid) {
+		this.eid = eid;
+	}
+	public String getEname() {
+		return ename;
+	}
+	public void setEname(String ename) {
+		this.ename = ename;
+	}
+	public String getGender() {
+		return gender;
+	}
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+	public Float getSalary() {
+		return salary;
+	}
+	public void setSalary(Float salary) {
+		this.salary = salary;
+	}
+	
 
-public  class Employee implements Comparable {
-public int eid;
-public String ename;
-@Override
-public String toString() {
-	return "Employee [eid=" + eid + ", ename=" + ename + "]";
-}
-public Employee(int eid2, String ename2) {
-	// TODO Auto-generated constructor stub
-	eid=eid2;
-	ename=ename2;
-}
-public int compareTo(Employee o) {
-	return ename.compareTo(o.ename);
-}
-@Override
-public int compareTo(Object o) {
-	// TODO Auto-generated method stub
-	return 0;
-}
 }
