@@ -1,4 +1,4 @@
-package com.ssi.DemoHib;
+package com.ssi.JpaDemo;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -8,6 +8,11 @@ public class Employee {
 	@Id
 	private int eid;
 	private String ename;
+	@Override
+	public String toString() {
+		return "Employee [eid=" + eid + ", ename=" + ename + ", gender="
+				+ gender + ", salary=" + salary + "]";
+	}
 	private String gender;
 	private Float salary;
 	public int getEid() {
@@ -34,6 +39,5 @@ public class Employee {
 	public void setSalary(Float salary) {
 		this.salary = salary;
 	}
-	
 
 }
